@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('cube','ManagerController@inicio');
+Route::post('cube','ManagerController@procesar');
+
+Route::get('form',function () {
+    return view('form');
+});
